@@ -62,10 +62,12 @@ def play(my_songs)
   inp = gets.chomp
 
   if my_songs.include?(inp)
-    puts "Included!"
+    #puts "Included!"
     puts "Opening #{inp}"
     #system "open #{my_songs[inp]}"
+    system("open #{my_songs[inp]}")
     #trouble opening the filehere
+    puts " open #{my_songs[inp]}"
     puts "Please wait..."
   else
     puts "Invalid input, please try again"
